@@ -5,7 +5,13 @@ const MealsGrid = ({ meals }) => {
     <ul className={classes.meals}>
       {meals.map((meal) => (
         <li key={meal.id}>
-          <MealItem {...meals} />
+          <MealItem
+            creator={meal.creator}
+            image={meal.image}
+            slug={meal.slug}
+            summary={meal.summary}
+            title={meal.title}
+          />
         </li>
       ))}
     </ul>
