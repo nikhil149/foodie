@@ -1,5 +1,14 @@
 export const dummyMeals = [
   {
+    title: "New tase fool",
+    image: "/images/new-tase-fool.jpeg",
+    instructions: "testong food",
+    summary: "nothing just testing",
+    creator: "raje",
+    creator_email: "raje@hmail.com",
+    slug: "new-tase-fool",
+  },
+  {
     title: "Juicy Cheese Burger",
     slug: "juicy-cheese-burger",
     image: "/images/burger.jpg",

@@ -3,16 +3,16 @@ import { dummyMeals } from "@/dummyMeals";
 import axios from "axios";
 const UpdateTable = () => {
   const updateData = () => {
-    for (const meal of dummyMeals) {
-      axios
-        .post("/api/update", meal)
-        .then(() => {
-          console.log("updated", meal);
-        })
-        .catch((error) => {
-          console.log("Failed");
-        });
-    }
+    // for (const meal of dummyMeals) {
+    axios
+      .post("/api/update", dummyMeals[0])
+      .then(() => {
+        console.log("updated", meal);
+      })
+      .catch((error) => {
+        console.log("Failed");
+      });
+    // }
   };
   return (
     <div>
